@@ -47,7 +47,7 @@ class Burst
       .outerRadius((d) => Math.max(0, @y(d.y + d.dy)) );
 
     @label = (d) ->
-      d.key + " : " + @formatNumber(d.value)
+      d.key + " : " + @formatNumber(d.value * 1000)
 
     @load()
 
