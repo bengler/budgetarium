@@ -34,7 +34,7 @@ class Burst
       .append("g")
       .attr("transform", "translate(" + @width / 2 + "," + @height / 2 + ")")
 
-    @nodeDesc = @container.append("div").attr("class", "nodeDesc").text("foo")
+    @nodeDesc = @container.append("div").attr("class", "nodeDesc").text("")
 
     @partition = d3.layout.partition()
       .value( (d) => @comparator(d, @year) )
