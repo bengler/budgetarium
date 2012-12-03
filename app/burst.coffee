@@ -56,10 +56,10 @@ class Burst
     @year = year
     @update()
 
-
   load: ->
     # Read data
-    d3.csv "/data/2013_byrådets_forslag_drift.csv", (data) =>
+    d3.csv "/data/2013_byradets_forslag_drift.csv", (data) =>
+
       @tree = d3.nest()
         .key((d) -> d.Avdelingsnavn)
         .key((d) -> d.Kapittelnavn)        
